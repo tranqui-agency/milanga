@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milanesas Blog - Todo sobre Milanesas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50">
+    <!-- Header -->
+    <header class="bg-amber-600 text-white shadow-lg">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold">🍖 Milanesas Blog</h1>
+            <div class="space-x-6">
+                <a href="#inicio" class="hover:text-amber-200">Inicio</a>
+                <a href="#blog" class="hover:text-amber-200">Blog</a>
+                <a href="#recetas" class="hover:text-amber-200">Recetas</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="bg-gradient-to-r from-amber-500 to-orange-600 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-bold mb-4">El Arte de la Milanesa</h2>
+            <p class="text-xl mb-8">Descubre recetas, técnicas y secretos de la milanesa perfecta</p>
+            <a href="#blog" class="bg-white text-amber-600 px-8 py-3 rounded-full font-bold hover:bg-amber-100 inline-block">Ver Artículos</a>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section id="blog" class="container mx-auto px-4 py-16">
+        <h2 class="text-4xl font-bold text-amber-800 mb-12 text-center">Últimos Artículos</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Post 1 -->
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                <div class="h-48 bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-6xl">
+                    🥩
+                </div>
+                <div class="p-6">
+                    <span class="text-amber-600 text-sm font-semibold">Técnicas</span>
+                    <h3 class="text-2xl font-bold text-gray-800 mt-2 mb-3">La Milanesa Napolitana Perfecta</h3>
+                    <p class="text-gray-600 mb-4">Aprende los secretos para lograr una milanesa napolitana con queso derretido y salsa de tomate casera.</p>
+                    <button onclick="openPost(0)" class="text-amber-600 font-semibold hover:text-amber-700">Leer más →</button>
+                </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                <div class="h-48 bg-gradient-to-br from-yellow-400 to-amber-500 flex items-center justify-center text-6xl">
+                    🍗
+                </div>
+                <div class="p-6">
+                    <span class="text-amber-600 text-sm font-semibold">Recetas</span>
+                    <h3 class="text-2xl font-bold text-gray-800 mt-2 mb-3">Milanesa de Pollo Crujiente</h3>
+                    <p class="text-gray-600 mb-4">El secreto del empanado perfecto que queda crujiente por fuera y jugoso por dentro.</p>
+                    <button onclick="openPost(1)" class="text-amber-600 font-semibold hover:text-amber-700">Leer más →</button>
+                </div>
+            </article>
+
+            <!-- Post 3 -->
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                <div class="h-48 bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center text-6xl">
+                    🌱
+                </div>
+                <div class="p-6">
+                    <span class="text-amber-600 text-sm font-semibold">Alternativas</span>
+                    <h3 class="text-2xl font-bold text-gray-800 mt-2 mb-3">Milanesas Vegetarianas</h3>
+                    <p class="text-gray-600 mb-4">Opciones deliciosas con berenjena, soja y garbanzos para todos los gustos.</p>
+                    <button onclick="openPost(2)" class="text-amber-600 font-semibold hover:text-amber-700">Leer más →</button>
+                </div>
+            </article>
+
+            <!-- Post 4 -->
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                <div class="h-48 bg-gradient-to-br from-red-400 to-pink-500 flex items-center justify-center text-6xl">
+                    🔥
+                </div>
+                <div class="p-6">
+                    <span class="text-amber-600 text-sm font-semibold">Tips</span>
+                    <h3 class="text-2xl font-bold text-gray-800 mt-2 mb-3">Cómo Freír Sin Aceite</h3>
+                    <p class="text-gray-600 mb-4">Técnicas para cocinar milanesas más saludables en horno o freidora de aire.</p>
+                    <button onclick="openPost(3)" class="text-amber-600 font-semibold hover:text-amber-700">Leer más →</button>
+                </div>
+            </article>
+
+            <!-- Post 5 -->
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                <div class="h-48 bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center text-6xl">
+                    🧂
+                </div>
+                <div class="p-6">
+                    <span class="text-amber-600 text-sm font-semibold">Ingredientes</span>
+                    <h3 class="text-2xl font-bold text-gray-800 mt-2 mb-3">El Pan Rallado Ideal</h3>
+                    <p class="text-gray-600 mb-4">Comparativa de tipos de pan rallado y cómo hacer el tuyo en casa.</p>
+                    <button onclick="openPost(4)" class="text-amber-600 font-semibold hover:text-amber-700">Leer más →</button>
+                </div>
+            </article>
+
+            <!-- Post 6 -->
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                <div class="h-48 bg-gradient-to-br from-green-400 to-teal-500 flex items-center justify-center text-6xl">
+                    🥗
+                </div>
+                <div class="p-6">
+                    <span class="text-amber-600 text-sm font-semibold">Acompañamientos</span>
+                    <h3 class="text-2xl font-bold text-gray-800 mt-2 mb-3">Guarniciones Perfectas</h3>
+                    <p class="text-gray-600 mb-4">Las mejores ensaladas, papas y salsas para acompañar tus milanesas.</p>
+                    <button onclick="openPost(5)" class="text-amber-600 font-semibold hover:text-amber-700">Leer más →</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Recetas Section -->
+    <section id="recetas" class="bg-amber-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-amber-800 mb-12 text-center">Recetas Destacadas</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-amber-700 mb-4">🥩 Milanesa Clásica</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Carne de ternera fina</li>
+                        <li>• 2 huevos batidos</li>
+                        <li>• Pan rallado</li>
+                        <li>• Sal, pimienta, ajo</li>
+                        <li>• Aceite para freír</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-amber-700 mb-4">🍖 Milanesa a Caballo</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Milanesa de carne</li>
+                        <li>• 2 huevos fritos</li>
+                        <li>• Papas fritas</li>
+                        <li>• Ensalada mixta</li>
+                        <li>• Limón al gusto</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-amber-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-xl font-bold mb-2">🍖 Milanesas Blog</p>
+            <p class="text-amber-200">© 2024 - Todos los derechos reservados</p>
+            <p class="text-amber-300 mt-4">Hecho con amor y mucho pan rallado</p>
+        </div>
+    </footer>
+
+    <!-- Modal for full post -->
+    <div id="postModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-8">
+                <div class="flex justify-between items-start mb-6">
+                    <h2 id="modalTitle" class="text-3xl font-bold text-amber-800"></h2>
+                    <button onclick="closePost()" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                </div>
+                <div id="modalContent" class="prose max-w-none text-gray-700"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const posts = [
+            {
+                title: "La Milanesa Napolitana Perfecta",
+                content: `
+                    <h3 class="text-2xl font-bold mb-4">Ingredientes:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>4 milanesas de carne ya preparadas</li>
+                        <li>200g de jamón cocido</li>
+                        <li>200g de queso mozzarella</li>
+                        <li>Salsa de tomate casera</li>
+                        <li>Orégano y albahaca</li>
+                    </ul>
+                    
+                    <h3 class="text-2xl font-bold mb-4">Preparación:</h3>
+                    <ol class="list-decimal pl-6 mb-6 space-y-3">
+                        <li>Fríe las milanesas hasta que estén doradas y crujientes</li>
+                        <li>Colócalas en una fuente para horno</li>
+                        <li>Cubre cada milanesa con salsa de tomate</li>
+                        <li>Añade una loncha de jamón sobre cada una</li>
+                        <li>Cubre generosamente con queso mozzarella</li>
+                        <li>Espolvorea orégano al gusto</li>
+                        <li>Gratina en horno a 200°C por 10 minutos hasta que el queso se derrita</li>
+                    </ol>
+                    
+                    <p class="text-lg"><strong>Tip profesional:</strong> La clave está en no sobrecocinar la milanesa antes de gratinar, para que no quede seca.</p>
+                `
+            },
+            {
+                title: "Milanesa de Pollo Crujiente",
+                content: `
+                    <h3 class="text-2xl font-bold mb-4">El Secreto del Crujiente:</h3>
+                    <p class="mb-4">La textura perfecta se logra con una técnica de triple empanado y la temperatura correcta del aceite.</p>
+                    
+                    <h3 class="text-2xl font-bold mb-4">Ingredientes:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Pechugas de pollo fileteadas</li>
+                        <li>Harina 0000</li>
+                        <li>3 huevos batidos con leche</li>
+                        <li>Pan rallado (mejor si es casero)</li>
+                        <li>Sal, pimienta, pimentón</li>
+                    </ul>
+                    
+                    <h3 class="text-2xl font-bold mb-4">Técnica:</h3>
+                    <ol class="list-decimal pl-6 mb-6 space-y-3">
+                        <li>Aplana bien las pechugas con un mazo</li>
+                        <li>Salpimenta y deja reposar 15 minutos</li>
+                        <li>Pasa por harina, sacudiendo el exceso</li>
+                        <li>Sumerge en huevo batido</li>
+                        <li>Empana con pan rallado presionando bien</li>
+                        <li>Refrigera 30 minutos antes de freír</li>
+                        <li>Fríe en aceite a 180°C hasta dorar</li>
+                    </ol>
+                `
+            },
+            {
+                title: "Milanesas Vegetarianas",
+                content: `
+                    <h3 class="text-2xl font-bold mb-4">3 Opciones Deliciosas:</h3>
+                    
+                    <h4 class="text-xl font-bold mb-3 mt-6">1. Milanesa de Berenjena</h4>
+                    <p class="mb-4">Corta berenjenas en rodajas de 1cm, sala y deja reposar 30 minutos. Enjuaga, seca y empana como una milanesa tradicional.</p>
+                    
+                    <h4 class="text-xl font-bold mb-3 mt-6">2. Milanesa de Soja</h4>
+                    <p class="mb-4">Hidrata la soja texturizada, escurre bien y mezcla con huevo y condimentos. Forma medallones y empana.</p>
+                    
+                    <h4 class="text-xl font-bold mb-3 mt-6">3. Milanesa de Garbanzos</h4>
+                    <p class="mb-4">Procesa garbanzos cocidos con especias, forma hamburguesas y empana. Quedan súper crocantes.</p>
+                    
+                    <p class="text-lg mt-6"><strong>Consejo:</strong> Todas estas opciones se pueden hacer al horno para una versión más saludable.</p>
+                `
+            },
+            {
+                title: "Cómo Freír Sin Aceite",
+                content: `
+                    <h3 class="text-2xl font-bold mb-4">Métodos Saludables:</h3>
+                    
+                    <h4 class="text-xl font-bold mb-3 mt-6">Horno Convencional:</h4>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Precalienta a 220°C</li>
+                        <li>Rocía las milanesas con aceite en spray</li>
+                        <li>Hornea 15 minutos de cada lado</li>
+                        <li>Activa el grill los últimos 3 minutos</li>
+                    </ul>
+                    
+                    <h4 class="text-xl font-bold mb-3 mt-6">Freidora de Aire:</h4>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Configura a 200°C</li>
+                        <li>Rocía ligeramente con aceite</li>
+                        <li>Cocina 10 minutos, da vuelta</li>
+                        <li>Cocina otros 8-10 minutos</li>
+                    </ul>
+                    
+                    <p class="text-lg"><strong>Resultado:</strong> Milanesas crujientes con 80% menos grasa que las fritas tradicionales.</p>
+                `
+            },
+            {
+                title: "El Pan Rallado Ideal",
+                content: `
+                    <h3 class="text-2xl font-bold mb-4">Tipos de Pan Rallado:</h3>
+                    
+                    <h4 class="text-xl font-bold mb-3 mt-6">Pan Rallado Comercial:</h4>
+                    <p class="mb-4">Práctico y uniforme, pero puede contener aditivos. Ideal para el día a día.</p>
+                    
+                    <h4 class="text-xl font-bold mb-3 mt-6">Pan Rallado Casero:</h4>
+                    <p class="mb-4">Más sabor y textura. Usa pan del día anterior, sécalo al horno y procésalo.</p>
+                    
+                    <h4 class="text-xl font-bold mb-3 mt-6">Panko Japonés:</h4>
+                    <p class="mb-4">Extra crujiente, copos más grandes. Perfecto para milanesas gourmet.</p>
+                    
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Receta de Pan Rallado Casero:</h3>
+                    <ol class="list-decimal pl-6 mb-6 space-y-2">
+                        <li>Corta pan en cubos</li>
+                        <li>Seca en horno a 120°C por 20 minutos</li>
+                        <li>Procesa hasta obtener la textura deseada</li>
+                        <li>Agrega hierbas o especias al gusto</li>
+                        <li>Guarda en frasco hermético</li>
+                    </ol>
+                `
+            },
+            {
+                title: "Guarniciones Perfectas",
+                content: `
+                    <h3 class="text-2xl font-bold mb-4">Acompañamientos Clásicos:</h3>
+                    
+                    <h4 class="text-xl font-bold mb-3 mt-6">Ensaladas:</h4>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li><strong>Mixta:</strong> Lechuga, tomate, cebolla y limón</li>
+                        <li><strong>Rusa:</strong> Papa, zanahoria, arvejas y mayonesa</li>
+                        <li><strong>César:</strong> Lechuga romana, crutones y parmesano</li>
+                    </ul>
+                    
+                    <h4 class="text-xl font-bold mb-3 mt-6">Papas:</h4>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li><strong>Fritas:</strong> Clásicas y crujientes</li>
+                        <li><strong>Rústicas:</strong> Al horno con piel</li>
+                        <li><strong>Puré:</strong> Cremoso con manteca</li>
+                    </ul>
+                    
+                    <h4 class="text-xl font-bold mb-3 mt-6">Salsas:</h4>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li><strong>Criolla:</strong> Tomate, cebolla, morrón y vinagre</li>
+                        <li><strong>Chimichurri:</strong> Perejil, ajo, aceite y vinagre</li>
+                        <li><strong>Alioli:</strong> Ajo y mayonesa</li>
+                    </ul>
+                `
+            }
+        ];
+
+        function openPost(index) {
+            const post = posts[index];
+            document.getElementById('modalTitle').textContent = post.title;
+            document.getElementById('modalContent').innerHTML = post.content;
+            document.getElementById('postModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePost() {
+            document.getElementById('postModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on outside click
+        document.getElementById('postModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closePost();
+            }
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
